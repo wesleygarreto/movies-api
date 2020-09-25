@@ -1,7 +1,17 @@
-# Project com.challenge.movies.api/movies-api
+# Project movies-api
+
+This is an api to register movies and schedule exhibitions
 
 Steps to run this project:
 
 1. Start your Docker daemon
 2. Execute `./buildAndRun.sh` (Linux/MacOs) or `buildAndRun.bat` (Windows)
 3. Wait until Open Liberty is up- and running (e.g. use `docker logs -f CONTAINER_ID`)
+
+To Run in Dev mode:
+
+- mvn liberty:dev
+
+When running the application, open the API documentation at: 
+
+- http://localhost:9080/openapi/ui/
