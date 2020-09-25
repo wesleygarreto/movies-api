@@ -33,7 +33,7 @@ public class MovieResourceIT {
     }
 
     @Test
-    public void shouldReturnAllMovies() {
+    void shouldReturnAllMovies() {
 
         movieResource.createMovie(MovieDto.builder().name("Movie 1").genre("Genre 1").directorName("Director 1").releaseDate(LocalDate.now()).build());
         movieResource.createMovie(MovieDto.builder().name("Movie 2").genre("Genre 2").directorName("Director 2").releaseDate(LocalDate.now()).build());
@@ -46,7 +46,7 @@ public class MovieResourceIT {
     }
 
     @Test
-    public void shouldCreateMovie() {
+    void shouldCreateMovie() {
 
         final Response response = movieResource.createMovie(
                 MovieDto.builder()
@@ -60,7 +60,7 @@ public class MovieResourceIT {
     }
 
     @Test
-    public void shouldUpdatePerson() {
+    void shouldUpdateMovie() {
 
         final Movie createdMovie = movieResource.createMovie(
                 MovieDto.builder()
@@ -84,7 +84,7 @@ public class MovieResourceIT {
     }
 
     @Test
-    public void shouldDeleteMovie() {
+    void shouldDeleteMovie() {
 
         final Movie createdMovie = movieResource.createMovie(
                 MovieDto.builder()
