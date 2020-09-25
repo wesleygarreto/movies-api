@@ -1,6 +1,6 @@
 # Project movies-api
 
-This is an api to register movies and schedule exhibitions
+This is an api to register movies and schedule exhibitions, is restfull, using Jakarta EE, Microprofile, Open Liberty, Flyway Migrations, Apache Derby database in memory.
 
 Steps to run this project:
 
